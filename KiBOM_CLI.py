@@ -159,13 +159,14 @@ if write_to_bom:
         fname = ".".join(fsplit[:-1])
         fext = fsplit[-1]
 
-        output_file = str(fname) + "_" + str(net.getVersion()) + "." + fext
+        output_file = str(fname) + str(net.getVersion()) + "." + fext
 
     output_file = os.path.abspath(output_file)
 
     say("Output:",output_file)
 
     result = WriteBoM(output_file, groups, net, columns.columns, pref)
+    os.remove(input_file)
 
 if result:
     sys.exit(0)

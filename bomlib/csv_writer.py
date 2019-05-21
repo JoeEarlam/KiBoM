@@ -81,7 +81,7 @@ def WriteCSV(filename, groups, net, headings, prefs):
             writer.writerow(["Schematic Version:",net.getVersion()])
             writer.writerow(["Schematic Date:",net.getSheetDate()])
             writer.writerow(["BoM Date:",net.getDate()])
-            writer.writerow(["Schematic Source:",net.getSource()])
+            #writer.writerow(["Schematic Source:",net.getSource()])
             writer.writerow(["KiCad Version:",net.getTool()])
 
     return True

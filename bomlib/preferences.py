@@ -38,6 +38,9 @@ class BomPref:
         self.ignore = [
             ColumnList.COL_PART_LIB,
             ColumnList.COL_FP_LIB,
+			ColumnList.COL_DATASHEET,
+			ColumnList.COL_DESCRIPTION,
+			ColumnList.COL_PART,
             ] #list of headings to ignore in BoM generation
         self.corder = ColumnList._COLUMNS_DEFAULT
         self.useAlt = False #use alternate reference representation
