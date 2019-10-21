@@ -167,6 +167,7 @@ if write_to_bom:
 
     result = WriteBoM(output_file, groups, net, columns.columns, pref)
     os.remove(input_file)
+    os.remove(output_file + ".tmp")
 
 if result:
     sys.exit(0)

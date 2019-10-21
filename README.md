@@ -1,4 +1,4 @@
-# KiBoM
+# KiBoM - modified version
 
 [![Travis Status](https://api.travis-ci.org/SchrodingersGat/KiBoM.svg?branch=master)](https://travis-ci.org/SchrodingersGat/KiBoM)
 
